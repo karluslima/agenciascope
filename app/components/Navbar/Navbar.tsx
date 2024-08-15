@@ -1,5 +1,6 @@
-import Logo from '../Logo/logo'
-import MainMenu from './MainMenu/MainMenu'
+import Logo from '@/app/components/Logo/logo'
+import MainMenu from '../MainMenu/MainMenu'
+
 
 export default function NavBar() {
   return (

@@ -1,4 +1,4 @@
-import menu from '../../../lib/mainmenu.json'
+import menu from '@/app/lib/mainmenu.json'
 import Link from 'next/link'
 
 type menu = {
