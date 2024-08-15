@@ -1,0 +1,22 @@
+[
+  {
+    "id": 1,
+    "label": "Bem vindo",
+    "url": "#welcome"
+  },
+  {
+    "id": 2,
+    "label": "Sobre",
+    "url": "#about"
+  },
+  {
+    "id": 3,
+    "label": "Serviços",
+    "url": "#services"
+  },
+  {
+    "id": 4,
+    "label": "Contato",
+    "url": "#contact"
+  }
+]
