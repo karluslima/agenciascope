@@ -5,12 +5,14 @@ interface Button {
   buttonType: "transparent" | "solid";
 }
 
+const solidStyles = "p-3 border rounded-lg text-xs text-white"
+const transparentStyles = "border-white/30 backdrop-blur p-3 border rounded-lg text-xs text-white"
+
 const Button = (props: Button) => {
   return (
     <Link href="#about">
       <button data-format={props.buttonType}
-        className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2
-                 border-white/30 backdrop-blur p-3 border rounded-lg text-xs text-white">
+        className={props.buttonType == 'solid' ? solidStyles : transparentStyles + " m-auto"}>
         {props.label}
       </button>
     </Link>
