@@ -16,7 +16,7 @@ export default function Header() {
       <NavBar />
       <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 items-center flex flex-col">
         <h1 className={nunito.className + " text-white font-semibold	lg:text-7xl md:text-5xl text-3xl text-center mb-6"}>
-          Soluções digitais <br/> resultados reais
+          Soluções digitais <br />, resultados reais
         </h1>
         <Button buttonType="transparent" label="O que fazemos?" />
       </div>
