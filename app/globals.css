@@ -14,26 +14,9 @@
     @apply opacity-100 md:opacity-50 hover:opacity-100 transition-all duration-300;
   }
 
-  /* .menu-icon {
-    @apply md:hidden w-9 dark:bg-slate-900/75 bg-white
-  } */
+  .section-title {
+    @apply relative overflow-hidden mb-5;
+    @apply after:bg-[#0abcbe] after:content-[''] after:-translate-x-2/4;
+    @apply after:h-1 after:absolute after:w-4/6 after:bottom-0 after:left-1/2;
+  }
 }
-
-/* .main-menu {
-  @apply fixed w-screen right-[-100vw] bg-white h-screen px-5 py-0 top-0 md:relative md:h-auto md:w-auto md:bg-transparent md:right-0;
-}
-.main-menu.open + .menu-icon svg path {
-  @apply stroke-[black];
-}
-.categories {
-  @apply flex flex-col gap-[50px] pt-[110px] md:flex-row md:gap-[50px] md:pt-0;
-}
-.category {
-  @apply relative overflow-hidden after:bg-[#ff9338] after:content-[''] after:h-0.5 after:absolute after:w-full after:transition-all after:duration-300 after:ease-[ease] after:-left-full after:bottom-0 hover:after:left-0;
-}
-.categories:has(li:hover) li:not(:hover) {
-  @apply opacity-50;
-}
-.menu-icon svg path {
-  @apply stroke-[white];
-} */
