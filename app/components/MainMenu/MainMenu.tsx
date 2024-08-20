@@ -9,7 +9,7 @@ type menu = {
 
 export default function MainMenu() {
   return (
-    <div className="main-menu relative w-full md:w-1/4">
+    <div className="main-menu relative w-full md:w-1/2">
       <nav className="w-full py-2">
         <ul className="categories flex justify-between">
           {menu.map((menu) => {
