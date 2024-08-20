@@ -13,7 +13,13 @@
     @apply font-semibold text-white text-sm uppercase;
     @apply opacity-100 md:opacity-50 hover:opacity-100 transition-all duration-300;
   }
-
+  .navbar {
+    @apply p-4 flex z-50 flex-col items-center border-b-[1px];
+    @apply border-b-white/30 fixed w-full backdrop-blur duration-300 ease-[ease];
+  }
+  .bg-white .category-link{
+    @apply text-black;
+  }
   .section-title {
     @apply relative overflow-hidden mb-5;
     @apply after:bg-[#0abcbe] after:content-[''] after:-translate-x-2/4;
