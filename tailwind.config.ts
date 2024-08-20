@@ -11,6 +11,7 @@ const config: Config = {
     extend: {
       backgroundImage: {
         "header-bg": "url('/header-bg.jpg')",
+        "about-bg": "url('/about-bg.png')",
       },
     },
   },
