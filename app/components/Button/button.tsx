@@ -6,7 +6,7 @@ interface Button {
 }
 
 const solidStyles = "p-3 border rounded-lg text-xs text-white"
-const transparentStyles = "border-white/30 backdrop-blur p-3 border rounded-lg text-xs text-white"
+const transparentStyles = "border-white/30 backdrop-blur p-3 border rounded-lg text-base text-white"
 
 const Button = (props: Button) => {
   return (
