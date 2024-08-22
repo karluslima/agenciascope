@@ -28,7 +28,7 @@ export default function Solutions() {
                 </div>
 
                 <div className="flex flex-col w-full sm:w-2/3">
-                  <div className='text-[#078587] text-base font-semibold'> {solutions.label} </div>
+                  <div className='text-[#000000] text-base font-semibold'> {solutions.label} </div>
                   <div className="description font-light"> {solutions.description} </div>
                 </div>
               </div>
