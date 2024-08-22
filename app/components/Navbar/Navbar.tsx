@@ -15,7 +15,7 @@ export default function NavBar() {
   }, []);
 
   return (
-    <div className={color ? 'navbar bg-white' : 'navbar'}>
+    <div className={color ? 'navbar bg-white shadow' : 'navbar shadow'}>
       <div className="mx-auto flex w-full flex-col items-center md:justify-around md:flex-row">
         <Logo />
         <MainMenu />
