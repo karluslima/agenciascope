@@ -1,0 +1,30 @@
+[
+  {
+    "id": 1,
+    "label": "E-commerce",
+    "class": "ecommerce",
+    "icon": "ecommerce.svg",
+    "description": "Transforme suas vendas com um e-commerce profissional! Criamos experiências de compra únicas, adaptando diversas plataformas ao seu negócio. Também auxiliamos em sua migração de plataforma."
+  },
+  {
+    "id": 2,
+    "label": "Design",
+    "class": "design",
+    "icon": "design.svg",
+    "description": "Layouts sob medida para o seu negócio! Combinamos design estratégico e tecnologia para criar sites e e-commerces que impressionam e convertem. Sua marca merece um layout único e memorável."
+  },
+  {
+    "id": 3,
+    "label": "Performance",
+    "class": "performance",
+    "icon": "performance.svg",
+    "description": "Sites e e-commerces ágeis e eficientes! Nossas soluções de otimização de performance garantem carregamentos rápidos, melhorando a experiência do usuário e impulsionando seus resultados."
+  },
+  {
+    "id": 4,
+    "label": "Consultoria",
+    "class": "consultancy",
+    "icon": "consultancy.svg",
+    "description": "Diagnóstico completo para o sucesso do seu e-commerce. Nossa consultoria abrange mais de 50 pontos, garantindo um plano de ação estratégico para impulsionar seus resultados."
+  }
+]
