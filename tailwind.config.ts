@@ -12,6 +12,7 @@ const config: Config = {
       backgroundImage: {
         "header-bg": "url('/header-bg.jpg')",
         "about-bg": "url('/about-bg.png')",
+        "midcall-bg": "url('/midcall.jpg')",
       },
     },
   },

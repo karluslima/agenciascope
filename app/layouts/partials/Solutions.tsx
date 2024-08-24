@@ -1,6 +1,5 @@
 import Titles from '@/app/components/Titles/Titles';
 import solutions from '@/app/lib/solutions.json';
-import solutionsBackground from '@/public/solutions-bg.jpg';
 import Image from 'next/image';
 
 
@@ -29,7 +28,7 @@ export default function Solutions() {
 
                 <div className="flex flex-col w-full sm:w-2/3">
                   <div className='text-[#000000] text-base font-semibold'> {solutions.label} </div>
-                  <div className="description font-light text-sm leading-7"> {solutions.description} </div>
+                  <div className="description font-light text-base leading-7"> {solutions.description} </div>
                 </div>
               </div>
             )
