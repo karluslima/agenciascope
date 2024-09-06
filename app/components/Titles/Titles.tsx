@@ -1,12 +1,17 @@
 import { titillium } from "@/app/lib/fonts";
 
-type SectionTitle = {
+interface SectionTitleProps {
   title: string;
 }
-export default function Titles( props: SectionTitle ) {
+
+const Titles = ({ title }: SectionTitleProps) => {
   return (
-    <h2 className={titillium.className +" section-title w-full text-center sm:w-auto inline-block py-3 text-4xl md:text-5xl"}>
-      {props.title}
+    <h2
+      className={`${titillium.className} section-title w-full text-center sm:w-auto inline-block py-3 text-4xl md:text-5xl`}
+    >
+      {title}
     </h2>
-  )
-}
+  );
+};
+
+export default Titles;

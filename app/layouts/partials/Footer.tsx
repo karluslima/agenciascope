@@ -1,8 +1,10 @@
+import ContactForm from "@/app/components/Contact/ContactForm";
 import Copyright from "@/app/components/Copyright/copyright";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#15202b] h-[320px]">
+    <footer className="bg-black h-[320px]">
+      <ContactForm />
       <Copyright />
     </footer>
   )

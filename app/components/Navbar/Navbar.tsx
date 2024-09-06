@@ -1,25 +1,35 @@
 'use client'
-import MainMenu from '../MainMenu/MainMenu'
-import { useEffect, useState } from 'react'
-import Logo from '@/app/components/Logo/logo'
-
+import MainMenu from '../MainMenu/MainMenu';
+import { useEffect, useState, useRef } from 'react';
+import Logo from '@/app/components/Logo/logo';
 
 export default function NavBar() {
+  const [color, setColor] = useState(false);
+  const navRef = useRef(null);
 
-  const [color, setColor] = useState(false)
-  const changeColor = () => {
-    window.scrollY >= 100 ? setColor(true) : setColor(false)
-  }
   useEffect(() => {
-    window.addEventListener('scroll', changeColor)
+    const changeColor = () => {
+      if (window.scrollY >= 100) {
+        setColor(true);
+      } else {
+        setColor(false);
+      }
+    };
+
+    window.addEventListener('scroll', changeColor);
+
+    return () => window.removeEventListener('scroll', changeColor);
   }, []);
 
   return (
-    <div className={color ? 'navbar bg-white shadow' : 'navbar shadow'}>
+    <div
+      ref={navRef}
+      className={`navbar shadow ${color ? 'bg-white' : ''}`}
+    >
       <div className="mx-auto flex w-full flex-col items-center md:justify-around md:flex-row">
         <Logo />
         <MainMenu />
       </div>
     </div>
-  )
+  );
 }

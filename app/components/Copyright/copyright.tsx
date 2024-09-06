@@ -1,10 +1,12 @@
-export default function Copyright() {
-  const date = new Date()
-  const year = date.getFullYear()
+import { titillium } from "@/app/lib/fonts";
 
+export default function Copyright() {
+  const year = new Date().getFullYear();
   return (
-    <div className="copyright">
-      © {year} Todos os direitos reservados.
+    <div className="copyright bg-[#15202b]">
+      <div className={`container m-auto text-white border-t-[1px] border-slate-50 py-10 text-center ${titillium.className}`}>
+        © {year} Todos os direitos reservados.
+      </div>
     </div>
-  )
+  );
 }

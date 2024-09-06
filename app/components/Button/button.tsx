@@ -1,22 +1,26 @@
 import Link from "next/link";
 
-interface Button {
+interface ButtonProps {
   label: string;
   buttonType: "transparent" | "solid";
 }
 
-const solidStyles = "p-3 border rounded-lg text-xs text-white"
-const transparentStyles = "border-white/30 backdrop-blur p-3 border rounded-lg text-base text-white"
+const buttonStyles = {
+  solid: "p-3 border rounded-lg text-xs text-white",
+  transparent: "border-white/30 backdrop-blur p-3 border rounded-lg text-base text-white m-auto",
+};
 
-const Button = (props: Button) => {
+const Button = ({ label, buttonType }: ButtonProps) => {
   return (
     <Link href="#about">
-      <button data-format={props.buttonType}
-        className={props.buttonType == 'solid' ? solidStyles : transparentStyles + " m-auto"}>
-        {props.label}
+      <button
+        data-format={buttonType}
+        className={buttonStyles[buttonType]}
+      >
+        {label}
       </button>
     </Link>
-  )
-}
+  );
+};
 
-export default Button
+export default Button;
