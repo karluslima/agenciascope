@@ -11,6 +11,7 @@
   "dependencies": {
     "@lordicon/element": "^1.10.0",
     "@lordicon/react": "^1.10.0",
+    "@vercel/analytics": "^1.4.1",
     "@vercel/speed-insights": "^1.0.12",
     "framer-motion": "^11.3.28",
     "lottie-web": "^5.12.2",
