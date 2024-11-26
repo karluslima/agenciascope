@@ -3,6 +3,7 @@ import "./globals.css";
 import { SpeedInsights } from '@vercel/speed-insights/next';
 import Footer from "./layouts/partials/Footer";
 import Header from "./layouts/partials/Header";
+import { Analytics } from "@vercel/analytics/react"
 
 export const metadata: Metadata = {
   title: "Agência Scope",
@@ -23,6 +24,7 @@ export default function RootLayout({
         </main>
         <Footer />
         <SpeedInsights />
+        <Analytics/>
       </body>
     </html>
   );
